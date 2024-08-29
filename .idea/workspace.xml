@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b32f170-ef20-463e-ab51-2cbd58c6dc76" name="Changes" comment="ignored files" />
+    <list default="true" id="4b32f170-ef20-463e-ab51-2cbd58c6dc76" name="Changes" comment="merged 2 branches" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +95,7 @@
       <updated>1724825721520</updated>
       <workItem from="1724825722611" duration="3421000" />
       <workItem from="1724905318514" duration="938000" />
-      <workItem from="1724906264769" duration="725000" />
+      <workItem from="1724906264769" duration="1059000" />
     </task>
     <task id="LOCAL-00001" summary="added installation and project structure of laravel project readMe.md">
       <option name="closed" value="true" />
@@ -121,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724906683140</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merged 2 branches">
+      <option name="closed" value="true" />
+      <created>1724907313956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724907313956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added installation and project structure of laravel project readMe.md" />
     <MESSAGE value="ignored files" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignored files" />
+    <MESSAGE value="merged 2 branches" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged 2 branches" />
   </component>
 </project>
