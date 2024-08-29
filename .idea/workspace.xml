@@ -95,7 +95,7 @@
       <updated>1724825721520</updated>
       <workItem from="1724825722611" duration="3421000" />
       <workItem from="1724905318514" duration="938000" />
-      <workItem from="1724906264769" duration="403000" />
+      <workItem from="1724906264769" duration="725000" />
     </task>
     <task id="LOCAL-00001" summary="added installation and project structure of laravel project readMe.md">
       <option name="closed" value="true" />
@@ -113,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724828430582</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ignored files">
+      <option name="closed" value="true" />
+      <created>1724906683140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724906683140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -156,44 +156,44 @@ public function destroy(Product $product)
 - Customized the authorization process to support different user roles (Admin, User).
 - Restricted access to specific routes and features based on user roles using middleware.
 ##### Example Code
-``` base
-// Authentication
-// Login
-    public function login(Request $request)
-    {
-        $credentials = $request->only('email', 'password');
-
-        if (Auth::attempt($credentials, $request->filled('remember'))) {
-            return redirect(route('product.index')); // Redirect to the intended page or home
-        }
-
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->withInput();
-    }
-// Registration
-    public function register(Request $request)
-    {
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
-        return redirect()->route('user.login')->with('success', 'Registration successful. Please login.');
-    }
-```
+   ```bash
+   // Authentication
+   // Login
+   public function login(Request $request)
+       {
+           $credentials = $request->only('email', 'password');
+   
+           if (Auth::attempt($credentials, $request->filled('remember'))) {
+               return redirect(route('product.index')); // Redirect to the intended page or home
+           }
+   
+           return back()->withErrors([
+               'email' => 'The provided credentials do not match our records.',
+           ])->withInput();
+       }
+   // Registration
+       public function register(Request $request)
+       {
+           $this->validate($request, [
+               'name' => 'required|string|max:255',
+               'email' => 'required|string|email|max:255|unique:users',
+               'password' => 'required|string|min:6|confirmed',
+           ]);
+   
+           User::create([
+               'name' => $request->name,
+               'email' => $request->email,
+               'password' => Hash::make($request->password),
+           ]);
+           return redirect()->route('user.login')->with('success', 'Registration successful. Please login.');
+       }
+   ```
 ### 3. Dynamic Search and Filtering
 - Implemented dynamic search functionality allowing users to search products by name.
 - Developed filters for products based on price, category, and other relevant criteria.
 - Ensured seamless integration of search and filter operations for an improved user experience.
 ##### Example Code
-``` base
+```bash
 // Search and filter Product
 public function index(Request $request)
     {
@@ -246,19 +246,14 @@ public function index(Request $request)
 - Ensured that only admins have access to critical operations such as adding, updating, or deleting products.
 - Implemented role-based access control (RBAC) to enhance application security.
 ##### Example Code
-``` base
+```bash
 Route::middleware(['role:admin'])->group(function (){
     Route::get('/product/create',[ProductController::class,'create'])->name('product.create');
     Route::get('/product/{product}/update',[ProductController::class,'edit'])->name('product.update');
 });
 ```
-## Setup Instructions
 
-### Prerequisites
-- PHP 8.x
-- Composer
-- Laravel 10.x
-- MySQL or PostgreSQL
+
 
 ### Installation
 1. Clone the repository:
