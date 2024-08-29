@@ -4,21 +4,18 @@ This document summarizes my journey in learning the basics of Laravel, focusing 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [CRUD Operations](#crud-operations)
-- [Authentication and Authorization](#authentication-and-authorization)
+- [CRUD Operations](#1-crud-operations)
+- [Customized Authorization and Authentication](#2-customized-authorization-and-authentication)
 - [Jetstream Authentication](#jetstream-authentication)
 - [Backpack Integration](#backpack-integration)
 - [Conclusion](#conclusion)
 
 ## Introduction
 
-Here are the pre-requisites of creating a laravel project and installation process : 
+Here are the pre-requisites of creating a laravel project and installation process:
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Conclusion](#conclusion)
 
 
 This project is a simple PHP application that utilizes Composer to manage dependencies and autoloading. Composer makes it easier to integrate third-party libraries and maintain the project.
@@ -40,8 +37,8 @@ Follow these steps to set up the project:
    composer create-project laravel/laravel example-app
    cd example-app
    php artisan serve
-
-
+   ```
+   
 ## Database and Migration
 
 Follow these steps to set up the project:
@@ -66,39 +63,6 @@ Follow these steps to set up the project:
 
 The project is organized in a way that follows common best practices for PHP applications. Below is an overview of the directory and file structure:
 
-
-
-
-
-## CRUD Operations
-
-In this section, I learned how to perform Create, Read, Update, and Delete (CRUD) operations in Laravel. This involved:
-
-1. **Creating Controllers and Models**: Setting up controllers and models to handle data manipulation.
-2. **Routing**: Defining routes for accessing CRUD functionalities.
-3. **Views**: Developing views with Blade templates to display, input, and edit data.
-4. **Database Migrations**: Managing database schema changes using Laravel migrations.
-5. **Eloquent ORM**: Interacting with the database using Eloquent ORM for efficient data handling.
-
-### Example Code:
-
-```php
-// Route example for CRUD operations
-Route::resource('items', ItemController::class);
-public function update(User $user, Post $post)
-{
-    return $user->id === $post->user_id;
-}
-```
-
-
-# Laravel CRUD and Authorization Project
-
-## Overview
-
-This project is a demonstration of my skills in Laravel, focusing on CRUD operations, authorization using Laravel Breeze, dynamic search and filtering, and route protection based on user roles. The project showcases a robust user management system with admin and user roles, ensuring secure access and functionality throughout the application.
-
-## Features
 
 ### 1. CRUD Operations
 - Implemented Create, Read, Update, and Delete (CRUD) functionalities for managing resources in the application.
@@ -252,12 +216,3 @@ Route::middleware(['role:admin'])->group(function (){
     Route::get('/product/{product}/update',[ProductController::class,'edit'])->name('product.update');
 });
 ```
-
-
-
-### Installation
-1. Clone the repository:
-   ```bash
-   cd yourproject
-   git https://github.com/Rana-Hossain/laravel-crud-application.git
-   ```

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b32f170-ef20-463e-ab51-2cbd58c6dc76" name="Changes" comment="merged 2 branches" />
+    <list default="true" id="4b32f170-ef20-463e-ab51-2cbd58c6dc76" name="Changes" comment="ignored file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +98,7 @@
       <updated>1724825721520</updated>
       <workItem from="1724825722611" duration="3421000" />
       <workItem from="1724905318514" duration="938000" />
-      <workItem from="1724906264769" duration="1059000" />
+      <workItem from="1724906264769" duration="1869000" />
     </task>
     <task id="LOCAL-00001" summary="added installation and project structure of laravel project readMe.md">
       <option name="closed" value="true" />
@@ -129,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724907313956</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ignored file">
+      <option name="closed" value="true" />
+      <created>1724907341092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724907341092</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +161,7 @@
     <MESSAGE value="added installation and project structure of laravel project readMe.md" />
     <MESSAGE value="ignored files" />
     <MESSAGE value="merged 2 branches" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged 2 branches" />
+    <MESSAGE value="ignored file" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignored file" />
   </component>
 </project>
